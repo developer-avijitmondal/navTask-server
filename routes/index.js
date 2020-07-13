@@ -3,6 +3,7 @@ var router = express.Router();
 require('dotenv').config();
 const mysql = require('mysql2');  
 const db = require("../models");
+const Admin = db.Admin;
 const global = require('./globalMethod');
 const accountSid = 'ACd976523f209d91c9a198873f8d737f3c';
 const authToken = '1d891327fe9f2f1b43b5b5c70cb3721e';
