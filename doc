@@ -1,0 +1,312 @@
+sequelize query
+==========================
+sequelize init
+
+sequelize model:create --name Company --attributes name:string
+
+sequelize model:create --name Employee --attributes name:string,desination:string,email:string,salary:integer
+
+sequelize model:create --name Admin --attributes name:string,email:string,email_verified_at:string,password:string,remember_token:string,current_login_at:string,last_login_at:string,last_login_ip:string
+
+sequelize db:migrate 
+==========================
+
+223.223.144.44
+
+https://hackernoon.com/managing-encryption-keys-with-aws-kms-in-node-js-c320c860019a
+
+https://docs.google.com/spreadsheets/d/1OHsWivFmXeKXoV2YjAIcGCXL6oK3bQ7QaAxdJbFBu5I/edit#gid=159419396
+
+https://docs.google.com/spreadsheets/d/1ixXqAdm-HRxZDseHhMk0tFA_E5xruPqWjb77eCq_boE/edit?ts=5ec370ec#gid=1910169342
+
+https://docs.google.com/spreadsheets/d/1n4K_1juD6ZkNcdoegtoYRoKY7o2Z0HX5oe34xJAhA1M/edit?usp=sharing
+
+https://projects.invisionapp.com/share/WKVNJDFPTQX#/screens/401742722
+
+https://poneahealth.atlassian.net/secure/BrowseProjects.jspa
+
+https://navsoftworkspace.slack.com/archives/D012E7AB133/p1587735969006100
+
+https://www.omg.org/retail-depository/arts-odm-73/logical_10100.htm?zoom_highlightsub=mailing
+
+https://www.omg.org/retail-depository/arts-odm-73/logical_07030.htm?zoom_highlightsub=parties
+
+https://www.omg.org/retail-depository/arts-odm-73/logical_11130.htm
+
+https://projects.invisionapp.com/share/WKVNJDFPTQX#/screens
+
+https://www.youtube.com/watch?v=ZGVXwCYkGJQ
+
+http://52.205.34.141:8001/swagger/
+
+https://swagger.io/specification/v2/
+
+done
+=============
+retail organization entities
+retail physical site
+location within a site
+==============
+
+Your username: avijit.mondal@navsoft.in
+Your password: %oFmLSR!
+
+http://localhost:5601
+
+http://localhost:9200/
+
+http://3.222.63.70:9200/
+
+http://52.205.34.141:81/login
+admin@navsoft.in
+Terra1234@
+
+=================elastic search=================
+Step 1 : You ping the elasticsearch to check if its running
+Step 2 : Then you have to create an index( consider it as the database )
+Step 3 : Check if the index is created (Same API can be used to check if an index exists before creation)
+Step 4 : Once index is created you can either define the structure of data it will contain or just skip this step.
+Step 5 : Now you add document to the created index
+Step-6 : Use the search API with appropriate query string to get the result.
+
+https://stackoverflow.com/questions/15025876/what-is-an-index-in-elasticsearch
+
+https://ciphertrick.com/elasticsearch-and-nodejs-tutorial/
+
+https://www.digitalocean.com/community/tutorials/how-to-build-a-real-time-search-engine-with-node-vue-and-elasticsearch
+
+https://qbox.io/blog/integrating-elasticsearch-into-node-js-application
+
+https://youtu.be/2Pf8nyL7Dks
+
+https://www.youtube.com/watch?v=PyrTSrqVPdQ
+
+https://www.digitalocean.com/community/tutorials/how-to-build-a-real-time-search-engine-with-node-vue-and-elasticsearch
+
+https://medium.com/@siddharthac6/elasticsearch-node-js-b16ea8bec427
+
+https://medium.com/better-programming/introduction-to-elasticsearch-using-node-js-part-2-4c804427bc94
+
+https://softwareontheroad.com/ideal-nodejs-project-structure/#architecture
+
+https://www.freecodecamp.org/news/how-to-code-your-own-event-emitter-in-node-js-a-step-by-step-guide-e13b7e7908e1/
+
+====================end=========================
+
+https://wallpapercave.com/w/wp2734412
+
+"$ref": "#/definitions/Frachise",
+
+              "schema": {
+                "$ref": "#/definitions/Frachise",
+                "type": "string"
+              }
+
+
+
+            {
+              "name": "data",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/FrachisePost"
+              }
+            },
+
+            "parameters": [
+            {
+              "name": "data",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/FrachisePost"
+              }
+            },
+            {
+                "name": "businessunit_id",
+                "in": "path",
+                "description": "A unique integer value identifying this business unit.",
+                "required": true,
+                "type": "integer"
+            }
+          ],
+
+====================================
+queryInterface.createTable('users', {
+  id: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  }
+}).then(function() {
+  queryInterface.createTable('user_emails', {
+    userId: {
+      type: Sequelize.INTEGER,
+      references: { model: 'users', key: 'id' }
+    }
+  })
+});
+
+
+queryInterface.createTable('users', {
+  id: {
+    type: Sequelize.INTEGER,
+    primaryKey: true,
+    autoIncrement: true
+  },
+  createdAt: {
+    type: Sequelize.DATE
+  },
+  updatedAt: {
+    type: Sequelize.DATE
+  }
+}
+
+=======================================================
+
+https://docs.google.com/spreadsheets/d/1OHsWivFmXeKXoV2YjAIcGCXL6oK3bQ7QaAxdJbFBu5I/edit#gid=131103370
+
+http://54.237.252.103:3000/swagger/
+
+http://54.237.252.103:9200/
+
+sudo service elasticsearch restart
+
+http://54.237.252.103/create-department
+please always use
+username as ponea
+Password as Ponea1234@
+================================================
+
+SECRET_KEY=5(15ds+i2+%ik6z&!yer+ga9m=e%jcqiz_5wszg)r-z!2--b2d
+DB_NAME=terracaribbean
+DB_USER=postgres
+DB_PASS=gpnavsoft$%^GY2
+DB_SERVICE=3.222.63.70
+DB_PORT=5432
+ES_HOST=3.222.63.70
+ES_PORT=9200
+
+===================================
+
+http://54.237.252.103:9200/
+
+/*
+DB_HOST=localhost
+DB_USER=postgres
+DB_PASS=Test@123
+DB_NAME=ponealatestlocal_DB
+*/
+
+/*
+DB_HOST=54.237.252.103
+DB_USER=postgres
+DB_PASS=pass
+DB_NAME=poneabackend
+
+ELASTIC_HOST=54.237.252.103:9200
+*/
+
+createdAt
+updatedAt
+
+
+Sunanda Navsoft
+9800425262
+
+Subjit Navsoft
+9674642931
+
+Rahul
+7872580941
+
+Koustav
+7586826861
+
+
+Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicGFzc3dvcmQiOiIkMmEkMTAkaC5HdkEyWjBNYnQ0OE9pU0dPWDd6ZXZxWk5vMml6N3ViZGVyZEpvUlEvRC90V25nUC84QTYiLCJpYXQiOjE1OTA1NTkyNzl9.6fJBFeF8PMottjUt8-rwFtLgOQLMmT07lGtufEXIYgA
+
+
+
+==============delete database=============
+
+REVOKE CONNECT ON DATABASE mi_test FROM public;
+
+SELECT pg_terminate_backend(pg_stat_activity.pid)
+FROM pg_stat_activity
+WHERE pg_stat_activity.datname = 'mi_test';
+
+====================end===================
+
+
+basic_patient
+patient_people
+
+Token fe86e9c10c25a7c8c2c3b09c006a051cf57b18b7
+
+aws
+==============
+user: kmo@poneahealth.com
+pw : P@$$w0Rd
+2020RH6#g
+54.237.252.103
+
+docker-compose build
+docker-compose kill
+docker-compose up
+docker-compose up -d
+docker ps
+==============
+
+============
+http://backend.medirec.com/
+admin / Medirec1234@
+============
+
+
+==============
+permission
+==============
+1.permission_workgroup
+2.franchises_officeworkgroup (mutiple)
+3.permission_groupsourceaccess
+==============
+======================================
+# {
+        #    "description" : "Manager",
+        #     "offices" :
+        #            [
+        #                {"location_id":1},
+        #                {"location_id":2}
+        #            ],
+        #    "statuscode" : "Active",
+        #    "resources" :
+        #            [
+        #                {"resource_id":31,"view":"Y","edit":"N"},
+        #                {"resource_id":24,"view":"Y","edit":"Y"},
+        #                {"resource_id":10,"view":"Y","edit":"N"}
+        #            ]
+        # }
+======================================        
+
+worker_id = departmentallocation.worker_id
+                                for permission in permissions:
+                                    workgroup_id = permission["workgroup_id"]
+                                    statuscode = permission["status"]
+                                    Departmentresourceaccesstbl={
+                                        "departmentallocation":departmentallocationid,
+                                        "workgroup":workgroup_id,
+                                        "statuscode" : statuscode
+                                    }
+[5:02 PM] eta post e send korchi
+[5:02 PM] departmentResourceAccessSerializer = DepartmentResourceAccessSerializer(data=Departmentresourceaccesstbl)
+                                    if departmentResourceAccessSerializer.is_valid():
+                                        departmentResourceAccessSerializer.save()
+
+========================================
+
+===============================
+assign Employee for offices
+===============================
+table name : franchises_workeravailabilities
+===============================
