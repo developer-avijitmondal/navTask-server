@@ -8,6 +8,10 @@ const global = require('./globalMethod');
 const accountSid = 'ACd976523f209d91c9a198873f8d737f3c';
 const authToken = '1d891327fe9f2f1b43b5b5c70cb3721e';
 const client = require('twilio')(accountSid, authToken);
+const bcrypt = require('bcryptjs');
+const httpStatus = require('http-status')
+const saltRounds = 10;
+
 
 const con = mysql.createConnection({  
   host: process.env.DB_HOST,  
@@ -27,6 +31,21 @@ router.get('/', function(req, res, next) {
   res.status(200).json({result:'index working'});
 });
 
+router.post('/create-admin',async function(req, res) {  console.log(req.body);
+  const newUser = req.body;
+  bcrypt.hash(newUser.password, saltRounds, function(err, hash) {
+    newUser.password = hash;
+    Admin.create({
+      name:newUser.name,
+      password: newUser.password,
+      email:newUser.email
+    }).then(function(resolved){
+      res.status(httpStatus.CREATED).json({ error: false, type : 'success', result :resolved}).end();
+    }).catch(function(err) {
+      res.status(httpStatus.NOT_ACCEPTABLE).json({ error: true, type : 'failed', result :err}).end();
+    });    
+  })
+});
 
 router.post('/create-employees',async function(req, res) {  console.log(req.body);
   db.Employee.create({ //create user
